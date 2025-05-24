@@ -60,7 +60,7 @@ pip install pycsvlogger
    logger.info("Link updated successfully")
    ```
 
-Your CSV (`logs/app_events.csv`) will look like:
+Your CSV (`Logs.csv`) will look like:
 
 ```csv
 timestamp,script,record_id,action,status,details
@@ -113,14 +113,14 @@ Since your logs live in a single CSV file, you can easily:
 * **Command line**:
 
   ```bash
-  grep "abc123" logs/app_events.csv
+  grep "abc123" Logs.csv
   ```
 
 * **Python / Pandas**:
 
   ```python
   import pandas as pd
-  df = pd.read_csv("logs/app_events.csv")
+  df = pd.read_csv("Logs.csv")
   # Show only events for record abc123:
   print(df[df.record_id == "abc123"])
 
@@ -148,7 +148,7 @@ This makes it trivial to drill down on failures, measure performance, or audit t
 
   ```python
   init_csv_logger(
-      log_file="logs/events.csv",
+      log_file="Logs.csv",
       fieldnames=["timestamp","script","status","details","module","session_id"]
   )
   logger = get_record_logger(session_id="abc123", module="uploader")
