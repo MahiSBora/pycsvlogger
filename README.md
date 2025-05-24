@@ -22,15 +22,6 @@ Install from PyPI:
 ```bash
 pip install pycsvlogger
 ```
-
-Or install editable from your local copy:
-
-```bash
-git clone https://github.com/yourusername/pycsvlogger.git
-cd pycsvlogger
-pip install -e .
-```
-
 ---
 
 ## 🎯 Quickstart
@@ -41,7 +32,7 @@ pip install -e .
    from csv_logger import init_csv_logger, get_record_logger
 
    init_csv_logger(
-       log_file   = "logs/app_events.csv",
+       log_file   = "Logs.csv",
        fieldnames = [
            "timestamp", "script", "record_id", "action", "status", "details"
        ]
@@ -165,11 +156,5 @@ This makes it trivial to drill down on failures, measure performance, or audit t
   ```
 
 * **Multiple Loggers**: If you need separate CSV files for different workflows, simply call `init_csv_logger` with different `log_file` paths early in each module.
-
-## 🌐 License
-
-
-
----
 
 *Happy logging!*
