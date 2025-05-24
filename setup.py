@@ -8,7 +8,7 @@ setup(
     long_description_content_type="text/markdown",
     author="Mahipal Bora",
     author_email="mahi123bora@gmail.com",
-    url="https://github.com/yourusername/pycsvlogger",  # update with your repo
+    url="https://github.com/MahiSBora/pycsvlogger.git",  # update with your repo
     license="MIT",
     packages=find_packages(),          # will include the pycsvlogger/ package
     python_requires=">=3.7",
