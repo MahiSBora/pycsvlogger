@@ -1,0 +1,9 @@
+# created by virtualenv automatically
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
+.venv/
+pycheck.py
+EOF
